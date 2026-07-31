@@ -9,6 +9,9 @@ updates:
         patterns:
           - "org.pac4j*"
           - "pac4j-*"
+    ignore:
+      # Ignore pac4j upgrades pending fix for test classes shipped in production JAR (BEE-73323)
+      - dependency-name: "org.pac4j:*"
   - package-ecosystem: "github-actions"
     directory: /
     schedule:
