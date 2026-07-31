@@ -10,7 +10,7 @@ updates:
           - "org.pac4j*"
           - "pac4j-*"
     ignore:
-      # Ignore pac4j upgrades pending fix for test classes shipped in production JAR (BEE-73323)
+      # Ignore pac4j pending https://groups.google.com/g/pac4j-dev/c/PgWtjlRwP4E
       - dependency-name: "org.pac4j:*"
   - package-ecosystem: "github-actions"
     directory: /
